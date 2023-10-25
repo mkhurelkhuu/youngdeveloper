@@ -1,0 +1,57 @@
+[debug] [2023-10-25T03:45:51.692Z] ----------------------------------------------------------------------
+[debug] [2023-10-25T03:45:51.698Z] Command:       /Users/hvrelhvvmygmarbat/.nvm/versions/node/v20.9.0/bin/node /Users/hvrelhvvmygmarbat/.nvm/versions/node/v15.14.0/bin/firebase init hosting:github
+[debug] [2023-10-25T03:45:51.699Z] CLI Version:   12.7.0
+[debug] [2023-10-25T03:45:51.699Z] Platform:      darwin
+[debug] [2023-10-25T03:45:51.699Z] Node Version:  v20.9.0
+[debug] [2023-10-25T03:45:51.700Z] Time:          Wed Oct 25 2023 11:45:51 GMT+0800 (Ulaanbaatar Standard Time)
+[debug] [2023-10-25T03:45:51.700Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-25T03:45:51.767Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-25T03:45:51.769Z] > authorizing via signed-in user (youngdeveloper29@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/hvrelhvvmygmarbat/Documents/yd-website
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-10-25T03:45:51.776Z] Using project from CLI flag: esum-840ef
+[debug] [2023-10-25T03:45:51.778Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/esum-840ef [none]
+[debug] [2023-10-25T03:45:52.344Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/esum-840ef 200
+[debug] [2023-10-25T03:45:52.346Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/esum-840ef {"projectId":"esum-840ef","projectNumber":"509440915044","displayName":"esum","name":"projects/esum-840ef","resources":{"hostingSite":"esum-840ef","storageBucket":"esum-840ef.appspot.com","locationId":"asia-east2"},"state":"ACTIVE","etag":"1_88af71ad-18e6-4c37-957e-48e8378e675c"}
+[info] i  Using project esum-840ef (esum) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /Users/hvrelhvvmygmarbat/Documents/yd-website 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=246123096&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-10-25T03:45:54.005Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-10-25T03:45:54.006Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-10-25T03:45:54.870Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-10-25T03:45:54.871Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-10-25T03:45:54.893Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-10-25T03:45:55.514Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-10-25T03:45:55.514Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"mkhurelkhuu","id":23356925,"node_id":"MDQ6VXNlcjIzMzU2OTI1","avatar_url":"https://avatars.githubusercontent.com/u/23356925?v=4","gravatar_id":"","url":"https://api.github.com/users/mkhurelkhuu","html_url":"https://github.com/mkhurelkhuu","followers_url":"https://api.github.com/users/mkhurelkhuu/followers","following_url":"https://api.github.com/users/mkhurelkhuu/following{/other_user}","gists_url":"https://api.github.com/users/mkhurelkhuu/gists{/gist_id}","starred_url":"https://api.github.com/users/mkhurelkhuu/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mkhurelkhuu/subscriptions","organizations_url":"https://api.github.com/users/mkhurelkhuu/orgs","repos_url":"https://api.github.com/users/mkhurelkhuu/repos","events_url":"https://api.github.com/users/mkhurelkhuu/events{/privacy}","received_events_url":"https://api.github.com/users/mkhurelkhuu/received_events","type":"User","site_admin":false,"name":null,"company":"ГТСМТТ","blog":"","location":"Ulaanbaatar Mongolia","email":"mhurelhuu@gmail.com","hireable":null,"bio":null,"twitter_username":"mhurelhuu","public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2016-11-09T11:13:00Z","updated_at":"2023-10-14T09:39:38Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":5742,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as mkhurelkhuu 
+[info] 
